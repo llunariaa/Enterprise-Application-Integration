@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📻 Playlist Produktif🎵</h1>
+            <p>Hadir sebagai teman audio untuk menjaga fokus dan produktivitas selama mengerjakan project.</p>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Apa yang kamu cari?" required>
+                <button type="submit">Cari</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div id="loader" class="hidden">Fetching tracks...</div>
+        <div id="results-container" class="grid-container"></div> 
+    </main>
+
+    <footer>
+        <p>Created by Lunaria | Powered by iTunes API</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
